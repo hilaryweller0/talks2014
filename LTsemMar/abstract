@@ -1,0 +1,12 @@
+11 March 2014
+
+"Some numerical methods to enable atmospheric modelling on arbitrarily structured grids"
+
+Hilary Weller
+
+
+Long, stable and accurate time-steps are important for models of the atmosphere to enable efficient weather and climate predictions. This has motivated the use of semi-implicit, semi-Lagrangian models. However semi-Lagrangian techniques appears not to be ideal for the next generation of models which do not use latitude-longitude grids. Some new numerical methods are presented that enable long, stable time-steps without the non-local communication of semi-Lagrangian. Sub time-stepping is used for advection and acoustic and gravity waves are treated implicitly without the need for mean and perturbation variables.
+
+In addition, a new technique for modelling flow over orography using terrain following layers is introduced which guarantees curl-free gradients implying that the pressure gradient term is not a spurious source of vorticity. This mimetic property leads to better hydrostatic balance and better energy conservation. Curl-free gradients are achieved by using the co-variant components of velocity over orography rather than the usual horizontal and vertical components.
+
+Results with advective Courant numbers of up to 2.5 and and strong stratification are presented. This demonstrates the validity of the sub-cycling of advection and the implicit treatment of gravity waves. 

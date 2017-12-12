@@ -1,0 +1,1529 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usepackage{animate}
+
+% hack to get natbib working with beamer
+\newcommand{\newblock}{}
+
+% list modifications
+\setlength{\leftmargini}{0em}
+\setlength{\leftmarginii}{1em}
+\end_preamble
+\options serif
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Aspect of modelling the fully compressible Euler equations
+\end_layout
+
+\begin_layout Author
+Hilary Weller
+\end_layout
+
+\begin_layout Institute
+Meteorology, University of Reading
+\end_layout
+
+\begin_layout Date
+20 Jan 2014
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/hilary/graphics/uniLogoName.jpg
+	lyxscale 5
+	scale 5
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename /home/hilary/graphics/NCAS_logo.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Challenges 
+\end_layout
+
+\begin_layout Itemize
+Long time step requires implicit treatment of
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+acoustic waves
+\end_layout
+
+\begin_layout Itemize
+gravity waves
+\end_layout
+
+\begin_layout Standard
+Current semi-implicit algorithms are wildly complicated
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Splitting variables into mean and perturbation adds complexity
+\end_layout
+
+\begin_layout Itemize
+Some challenging mimetic properties
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+curl free gradients over orography
+\end_layout
+
+\begin_layout Itemize
+conservation of energy
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Problems with semi-Lagrangian.
+ One of:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+non conservation
+\end_layout
+
+\begin_layout Itemize
+only suitable for lat-lon grid
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Very high model top without a big sponge layer
+\end_layout
+
+\begin_layout Itemize
+Charney-Phillips vertical staggering rather than Lorenz
+\end_layout
+
+\begin_layout Itemize
+The great properties of current forecasting models on arbitrarily structured
+ grids
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Non-orthogonal treatment of orography
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename figs/orog.fig
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedright
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+For numerous reasons in meteorology the cells should line up in columns
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $\therefore$
+\end_inset
+
+ the mesh is non-orthogonal over orography
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\series bold
+Usual approach
+\series default
+: orthogonal prognostic velocity variables 
+\begin_inset Formula $u$
+\end_inset
+
+, 
+\begin_inset Formula $v$
+\end_inset
+
+, 
+\begin_inset Formula $w$
+\end_inset
+
+ in horizontal and vertical directions
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $\therefore$
+\end_inset
+
+ find 
+\begin_inset Formula $\frac{\partial p}{\partial x}$
+\end_inset
+
+ co-located with 
+\begin_inset Formula $u$
+\end_inset
+
+ without knowing 
+\begin_inset Formula $p$
+\end_inset
+
+ at this altitude (eg Klemp, Zangl)
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ pressure gradients not curl free
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Alternative: non-orthogonal prognostic variables (covariant)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename figs/nonOrthog.fig
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedright
+\end_layout
+
+\end_inset
+
+
+\series bold
+Prognostic variables
+\series default
+: 
+\begin_inset Formula $\rho\mathbf{u}\cdot\mathbf{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+where 
+\begin_inset Formula $\mathbf{d}_{e}=\mathbf{x}_{i}-\mathbf{x}_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ curl free pressure gradients
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ no spurious generation of vorticity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Non-orthogonal prognostic variables (covariant)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename /home/hilary/latex/meetings/2013/NAmaths_stratifiedFlow/figs/UV.fig
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $U=HV$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "58col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedright
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Need mass flux 
+\begin_inset Formula $U=\rho\mathbf{u}\cdot\mathbf{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+in continuity equation
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Requires operator 
+\begin_inset Formula $H$
+\end_inset
+
+ from space of all 
+\begin_inset Formula $V$
+\end_inset
+
+s to space of all 
+\begin_inset Formula $U$
+\end_inset
+
+s.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Semi-implicit solution without a reference state
+\end_layout
+
+\begin_layout Standard
+Fully compressible Euler equations:
+\begin_inset Formula 
+\begin{alignat*}{3}
+ & \textnormal{Momentum\,\,\,\,} & \frac{\partial\rho\mathbf{u}}{\partial t}+\nabla\cdot\rho\mathbf{uu} & +2\rho\Omega\times\mathbf{u} & =\rho\mathbf{g}-\rho c_{p}\theta\nabla\Pi\\
+ & \textnormal{Continuity} & \frac{\partial\rho}{\partial t}+\nabla\cdot\rho\mathbf{u} & =0\\
+ & \textnormal{Energy (flux)} & \frac{\partial\rho\theta}{\partial t}+\nabla\cdot\rho\mathbf{u}\theta & =0 & \textnormal{(advective) }\frac{\partial\theta}{\partial t}+ & \mathbf{u}\cdot\nabla\theta=0\\
+ & \textnormal{State} & \Pi^{\frac{1-\kappa}{\kappa}}=\frac{R}{p_{0}}\rho\theta
+\end{alignat*}
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+potential temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta=T\left(\frac{p_{0}}{p}\right)^{\kappa}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exner function of pressure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Pi=\left(\frac{p}{p_{0}}\right)^{\kappa}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Need implicit solution of gravity and acoustic waves
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Construction of Helmholtz equation
+\size footnotesize
+ (first order in time and ignoring Coriolis for brevity)
+\end_layout
+
+\begin_layout Standard
+Rearrange advective form of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ equation to give 
+\begin_inset Formula $\theta^{n+1}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\mathbf{d}$
+\end_inset
+
+ component of velocity:
+\begin_inset Formula 
+\[
+\theta^{n+1}=\theta^{n}-\Delta t\ \mathbf{\left(u^{\perp}\right)}^{n}\cdot\nabla\theta^{\ell}-\Delta t\ \mathbf{\left(u\cdot d\right)}^{n+1}\nabla_{d}\theta^{\ell}/|\mathbf{d}|^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+where 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{u}^{\perp}=\mathbf{u}-\left(\mathbf{u}\cdot\mathbf{\mathbf{\hat{d}}}\right)\mathbf{\hat{d}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nabla_{d}\theta=\left(\nabla\theta\right)\cdot\mathbf{d}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute into momentum and take dot product with 
+\begin_inset Formula $\mathbf{d}$
+\end_inset
+
+ (
+\begin_inset Formula $V=\rho\mathbf{u}\cdot\mathbf{d}$
+\end_inset
+
+, 
+\begin_inset Formula $U=\rho\mathbf{u}\cdot\mathbf{S}$
+\end_inset
+
+, 
+\begin_inset Formula $U=HV$
+\end_inset
+
+):
+\begin_inset Formula 
+\begin{align*}
+ & \frac{V^{n+1}-V^{n}}{\Delta t}+\left(\nabla\cdot U\mathbf{u}\right)\cdot\mathbf{d}=\rho\mathbf{g\cdot\mathbf{d}}\\
+ & -c_{p}\left\{ \rho|\mathbf{d}|\theta^{n}-\Delta t|\mathbf{d}|\rho\mathbf{\left(u^{\perp}\right)^{n}}\cdot\nabla\theta-\Delta t\ V^{n+1}\nabla_{d}\theta/|\mathbf{d}|^{2}\right\} \nabla_{d}\Pi^{n+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Construction of Helmholtz equation
+\end_layout
+
+\begin_layout Standard
+Rearrange to get 
+\begin_inset Formula $V^{n+1}$
+\end_inset
+
+ on the LHS as a function of 
+\begin_inset Formula $\Pi^{n+1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+V^{n+1} & \left(1-\Delta t^{2}c_{p}\nabla_{d}\theta\nabla_{d}\Pi/|\mathbf{d}|^{2}\right)=V^{n}-\Delta t\left(\nabla\cdot U\mathbf{u}\right)\cdot\mathbf{d}\\
+ & +\Delta t\rho\mathbf{g\cdot\mathbf{d}}-\Delta tc_{p}\rho|\mathbf{d}|\left\{ \theta^{n}-\Delta t\mathbf{\left(u^{\perp}\right)^{n}}\cdot\nabla\theta\right\} \nabla_{d}\Pi^{n+1}
+\end{align*}
+
+\end_inset
+
+Which is expressed as
+\begin_inset Formula 
+\[
+V^{n+1}=G\left(V^{\prime}-\Delta tc_{p}\rho|\mathbf{d}|\theta^{\prime}\nabla_{d}\Pi^{n+1}\right)
+\]
+
+\end_inset
+
+and substituted into the continuity equation (for implicit acoustic waves):
+\begin_inset Formula 
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(GHV^{\prime}\right)-\nabla\cdot\left(GH\Delta tc_{p}\rho\theta^{\prime}\nabla_{d}\Pi^{n+1}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Construction of Helmholtz equation
+\end_layout
+
+\begin_layout Standard
+From
+\begin_inset Formula 
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(GHV^{\prime}\right)-\nabla\cdot\left(GH\Delta tc_{p}\rho\theta^{\prime}\nabla_{d}\Pi^{n+1}\right)=0
+\]
+
+\end_inset
+
+we need to create a Helmholtz equation for 
+\begin_inset Formula $\Pi$
+\end_inset
+
+.
+ So express 
+\begin_inset Formula $\rho$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ (using equation of state):
+\begin_inset Formula 
+\[
+\rho^{n+1}=\Psi\ \Pi^{n+1}
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+\Psi=\left(\rho^{\ell}\right)^{\frac{2\kappa-1}{\kappa-1}}\left(\frac{R\theta}{p_{0}}\right)^{\frac{\kappa}{\kappa-1}}\approx\left(\frac{p_{0}}{R}\right)^{0.4}\frac{\rho^{0.6}}{\theta^{0.4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\rightarrow\frac{\Psi\Pi^{n+1}-\Psi\Pi^{n}}{\Delta t}+\nabla\cdot\left(GHV^{\prime}\right)-\nabla\cdot\left(GH\Delta tc_{p}\rho\theta^{\prime}\nabla_{d}\Pi^{n+1}\right)=0
+\]
+
+\end_inset
+
+This is VERY convergent and allows long time steps w.r.t.
+ gravity and acoustic waves speeds
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Results
+\series medium
+\size normal
+ (using 2nd order Crank-Nicholson time-stepping combined with 3rd order
+ RK for advection)
+\end_layout
+
+\begin_layout Standard
+Resting stratified atmosphere over a steep mountain
+\end_layout
+
+\begin_layout Itemize
+should remain stationary
+\end_layout
+
+\begin_layout Itemize
+potential temperature contours should remain horizontal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\partial p/\partial x$
+\end_inset
+
+ form, implicit gravity waves
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $H$
+\end_inset
+
+ form, implicit gravity waves
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta t$
+\end_inset
+
+=100s.
+ Maximum 
+\begin_inset Formula $N\Delta t$
+\end_inset
+
+=2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta t$
+\end_inset
+
+=100s.
+ Maximum 
+\begin_inset Formula $N\Delta t$
+\end_inset
+
+=2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/restingScharKlemp_BTF_save_SIg_gradp_18000_theta.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/restingScharKlemp_BTF_save_SIg_H_18000_theta.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Maximum Spurious Velocity
+\series medium
+\size normal
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/restingScharKlemp_plots_w.pdf
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/figs/Kle11_fig4_2.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+New models
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 4 from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kle11"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Energy Conservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BTF 
+\begin_inset Formula $\partial p/\partial x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BTF 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/restingScharKlemp_BTF_save_SIg_gradp_energy.pdf
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/restingScharKlemp_BTF_save_SIg_H_energy2.pdf
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Hydrostatic Mountain Waves
+\series medium
+\size small
+ (To test implicit gravity waves)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+tabcolsep}{1pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Linear analytic solution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Implicit gw, 
+\begin_inset Formula $\Delta t=20$
+\end_inset
+
+s, 
+\begin_inset Formula $Co=0.2$
+\end_inset
+
+, 
+\begin_inset Formula $N\Delta t=0.4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/figs/MDWH10_fig4e.png
+	lyxscale 70
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/hillWaves_hydro_nonUnif_save_SIg_H_dt20_LUST_15000_w.pdf
+	lyxscale 75
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Explicit gw, 
+\begin_inset Formula $\Delta t=20$
+\end_inset
+
+s, 
+\begin_inset Formula $Co=0.2$
+\end_inset
+
+, 
+\begin_inset Formula $N\Delta t=0.4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Implicit gw, 
+\begin_inset Formula $\Delta t=100$
+\end_inset
+
+s, 
+\begin_inset Formula $Co=1$
+\end_inset
+
+, 
+\begin_inset Formula $N\Delta t=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/hillWaves_hydro_nonUnif_save_SI_H_dt20_LUST_15000_w.pdf
+	lyxscale 75
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/hillWaves_hydro_nonUnif_save_SIg_H_dt100_LUST_15000_w.pdf
+	lyxscale 75
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Implicit gw, 
+\begin_inset Formula $\Delta t=200$
+\end_inset
+
+s, 
+\begin_inset Formula $Co=2$
+\end_inset
+
+, 
+\begin_inset Formula $N\Delta t=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+Resolution
+\size scriptsize
+
+\begin_inset Formula $\div2$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta t=500$
+\end_inset
+
+s, 
+\begin_inset Formula $Co=2.5$
+\end_inset
+
+, 
+\begin_inset Formula $N\Delta t=10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/hillWaves_hydro_nonUnif_save_SIg_H_dt200_LUST_15000_w.pdf
+	lyxscale 75
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Graphics
+	filename /home/hilary/latex/myPapers/ExnerFoam/graphics/hillWaves_hydro_nonUnifCoarse_save_SIg_H_dt500_15000_w.pdf
+	lyxscale 75
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Conclusions
+\end_layout
+
+\begin_layout Itemize
+Solution of the fully compressible Euler equations including
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Implicit treatment of acoustic and gravity waves
+\end_layout
+
+\begin_layout Itemize
+No explicitly defined reference state
+\end_layout
+
+\begin_layout Itemize
+New linearisation of equation of state
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+New treatment of non-orthogonality around orography
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+covariant velocity as prognostic variable
+\begin_inset Newline newline
+\end_inset
+
+(no need to find horizontal pressure gradient
+\end_layout
+
+\begin_layout Itemize
+weaker spurious vertical velocity
+\end_layout
+
+\begin_layout Itemize
+curl-free pressure gradient
+\end_layout
+
+\begin_layout Itemize
+better energy conservation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Long time steps with sub-cycling rather than with semi-Lagrangian.
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mass conservation
+\end_layout
+
+\begin_layout Itemize
+Suitable for quasi-uniform grids and massive parallelisation
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "numerics"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

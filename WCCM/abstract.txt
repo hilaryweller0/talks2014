@@ -1,0 +1,9 @@
+A mimetic discretisation of the fully compressible Euler equations over orography with implicit treatment of acoustic and gravity waves
+
+Hilary Weller and Ava Shahrokhi
+
+Solution techniques for the fully compressible Euler equations with implicit treatment of acoustic and gravity waves have been around for many years but are still not used by many weather and climate forecasting centres. These techniques offer long stable time-steps in the presence of strong stratification. It is hypothesised that these techniques are not commonly used because they appear to be very complicated, relying on perturbations from time varying mean states. The approach is simplified and derived without reliance on mean and perturbation variables using the flux form as well as the advective form of the entropy equation, making conservation more straightforward to achieve.
+
+Using terrain following layers over orography, the pressure gradient force error is avoided by using terrain following velocity as a prognostic variable rather than horizontal velocity. This formulation leads to curl free pressure gradients which avoids spurious circulations associated with terrain following coordinates over orography.
+
+Results demonstrating the merits of these approaches will be presented.

@@ -1,0 +1,77 @@
+Monday 21/07/2014  11:00 - 13:00
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Meshless and Related Methods
+S114A Room: Mare Nostrum A
+
+Applications of Error Estimation and Model Adaptation in Computational Mechanics I
+MS010A Room: Mare Nostrum E
+12:40 R-adaptivity for fluid-structure interaction, deforming domains and internal boundaries
+Kaspar Müller, Jeannette H. Spühler, Cem Degirmenci, Johan Jansson and Johan Hoffman
+
+CFD in Wind Energy – From Wind Turbine Aerodynamics to Atmospheric Boundary Layer Flows I
+MS215A Room: Sala C1
+
+
+Monday 21/07/2014 14:00 - 16:00
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Meshless and Related Methods
+MS114B Room: Mare Nostrum A
+including some stuff on RBFs
+
+CFD in Wind Energy – From Wind Turbine Aerodynamics to Atmospheric Boundary Layer Flows II
+MS215B Room: Sala C1
+(more on turbine blades)
+
+Monday 21/07/2014  16:30 - 18:30
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Meshless and Related Methods
+S114C Room: Mare Nostrum A
+(not so interesting)
+
+HPC-Based CFD Simulations for Industrial Applications III
+MS208C Room: Mare Nostrum B
+
+16:30 A novel CAA approach in OpenFOAM for computation of sound fields
+Jan Schmalz and Wojciech Kowalczyk
+
+Methods for Cut and Composite Meshes: Theory, Algorithms and Applications I
+MS192A Room: Sala C1
+
+Practical Aspects of Advanced CFD Simulations on Emerging Multi- and Manycore Systems I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Dominik Göddeke and Matthias Möller 	MS119A
+Room: Sala E5
+
+17:50 On time stepping for meterological applications using the Discontinuous Galerkin method
+Andreas Dedner
+
+Numerical Methods for Ocean Coastal and Internal Waves Modeling I
+MS244A Room: Business Centre I
+
+Tuesday 22/07/2014 11:00 - 13:00
+
+Meshless and Related Methods
+MS114D Room: Mare Nostrum A
+
+Advances in Accurate and Robust Numerical Methods for Computational Fluid Dynamics IV
+MS051D Room: Sala A
+Talks on high order FV
+
+Advances with Adjoint CFD Solvers for Unsteady Flow I
+MS214A Room : Sala D4
+A talk on OpenFOAM
+
+Tuesday 22/07/2014  14:00 - 16:00 semi-Plenary
+
+Tuesday 22/07/2014  16:30 - 18:30
+
+Current Trends in Modelling and Simulation of Turbulent Flows I
+MS082A Room: Mestral
+
+Mesh Generation and Adaption I
+MS198A Room: Terral
+
+Wednesday, July 23rd

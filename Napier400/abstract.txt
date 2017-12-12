@@ -1,0 +1,7 @@
+NAISNapier400 - Napier 400 - Numerical Algorithms and Intelligent Software Symposium
+
+Numerics for Weather and Climate Forecasting on Modern Computers
+
+Hilary Weller
+
+Numerical models of the atmosphere have reached a pinnacle in performance for a previous generation of computers. The best weather forecasting models - those of ECMWF and the UK Met Office - use semi-implicit, semi-Lagrangian models on latitude-longitude grids which run very efficiently and accurately on mid-sized vector-parallel machines with relatively fast memory access. However the very algorithms that make them so efficient on these moderately parallel machines limit their performance on larger parallel machines with relatively slower memory. I will describe a number of developments designed to work more efficiently on massively parallel machines. These include some numerical methods designed to improve the accuracy of results on quasi-uniform grids, horizontally explicit and vertically implicit time-stepping and sub-stepping of advection.

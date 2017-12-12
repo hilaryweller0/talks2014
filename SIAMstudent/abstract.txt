@@ -1,0 +1,7 @@
+New mathematical techniques for weather and climate prediction
+
+Dr Hilary Weller
+
+Modern massively parallel computers have created the need for new numerical algorithms for weather and climate prediction which require less communication between parallel processors and which require less memory access. Most operational forecasting centres use latitude-longitude grids on which to solve the equations of motion, which leads to excessive communications where grid lines converge towards the poles. New algorithms are being developed which achieve similar accuracy on arbitrary meshes of the sphere. Some new finite volume techniques will be described.
+
+The move to arbitrary meshes for atmospheric modelling has opened up possibilities of adaptive meshing in order to achieve greater accuracy where needed. Mesh adaptivity has been a subject of research in atmospheric modelling for many decades but has not been used operationally. Some of the problems will be described and some possible solutions presented. 

@@ -1,0 +1,73 @@
+Tuesday 2-4
+
+22/07/2014  14:00 - 14:45
+Industrial Lecture 	IL
+Room: Auditorium
+Chair: Jacques Periaux
+
+Numerical Simulation on Aircraft – Design and Understand Aircraft Aerodynamics and Flight Physics
+Klaus Becker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+22/07/2014  14:00 - 16:00
+Semi-Plenary Lectures I 	SPL1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Room: Mare Nostrum A+B+C
+Chair: Carlos Felippa
+
+Variational methods for consistent singular and scaled mass matrices
+Manfred Bischoff and Anton Tkachuk
+
+Selective mass scaling for solid-shell elements in explicit dynamics analyses
+Umberto Perego, Giuseppe Cocchetti and Mara Pagani
+
+Mechanics of confined solid and fluid thin films: Graphene and lipid bilayers
+Marino Arroyo, Mohammad Rahimi and Kuan Zhang
+
+22/07/2014  14:00 - 16:00
+Semi-Plenary Lectures II 	SPL2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Room: Mare Nostrum D+E+F
+Chair: Herbert Mang
+CoChair: Manolis Papadrakakis
+
+Towards adaptive multiscale techniques for kinetic theories
+Harald van Brummelen and M. Abdel Malik
+
+Multiscale analysis applied to material modeling
+Peter Wriggers, Stefan Loehnert and Eva Lehmann
+
+Practical multiscaling
+Jacob Fish
+
+22/07/2014  14:00 - 16:00
+Semi-Plenary Lectures III 	SPL3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Room: Sala H 1 + H 2
+Chair: Robert Taylor
+CoChair: Manuel Casteleiro
+
+Particle Methods: The most efficient way to solve fluid mechanics problems
+Sergio R. Idelsohn, Eugenio Oñate, Norberto Nigro, Julio M. Marti, Pablo A. Becker and Juan Gimenez
+
+Multi-disciplinary robust optimization of sports dynamics system
+Katsuyuki Suzuki, Hitoshi Kodama and Satoshi Shimono
+
+Intelligent computing in multiscale materials design
+Tadeusz Burczynski
+
+22/07/2014  14:00 - 16:00
+Semi-Plenary Lectures IV 	SPL4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Room: Sala H 3 + J
+Chair: Tod Laursen
+CoChair: Jacques Periaux
+
+Reduced Order Models with (and for) goal-oriented error assessment
+Pedro Díez, Núria Parés, Sergio Zlotnik, Francesc Verdugo and Antonio Huerta
+
+The hybridizable Discontinuous Galerkin Methods
+Bernardo Cockburn
+
+Discontinuous Petrov-Galerkin method with optimal test functions. Progress report
+Leszek Demkowicz and Jay Gopalakrishnan

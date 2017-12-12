@@ -1,0 +1,7 @@
+Unstructured Meshes and r-Adaptivity for Atmospheric Models
+Hilary Weller
+
+Unstructured meshes are now an attractive alternative to latitude-longitude grids for global atmospheric modelling to avoid the convergence of meridians towards the poles which limits performance on modern massively parallel computers. Recent developments have extended unstructured mesh methods to have similar numerical properties and accuracy to latitude-longitude grid models. Some new finite volume techniques will be described, including a technique to guarantee curl-free pressure gradients over mountains on non-orthogonal meshes.
+
+The move to arbitrary meshes for atmospheric modelling has opened up possibilities of adaptive meshing in order to achieve greater accuracy where needed. Mesh redistribution, or r-adaptivity, is an attractive form of adaptivity since mesh connectivity does not need to change, mapping between different meshes is not needed and mesh adaptivity does not lead to parallel load imbalance, as occurs for h-adaptivity during insertion and deletion of points. Optimal transport, solving a Monge-Ampere equation, is an attractive technique to redistribute a mesh since it avoids mesh tangling. A numerical technique for solving the Monge-Ampere equation on a sphere for global atmospheric r-adaptivity will be described and results on r-adaptive meshes presented.
+

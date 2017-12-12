@@ -1,0 +1,2932 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usepackage{animate}
+
+% hack to get natbib working with beamer
+\renewcommand{\newblock}{}
+
+% list modifications
+\setlength{\leftmargini}{0em}
+\setlength{\leftmarginii}{1em}
+
+% make $\times$, $+$, $-$ and $=$ use less space
+\newcommand{\tims}{\negthinspace \times \negthinspace}
+\newcommand{\eq}{\negthinspace = \negthinspace}
+\newcommand{\plus}{\negthinspace + \negthinspace}
+\newcommand{\minus}{\text{-}}
+\newcommand{\smallcdot}{\negthinspace \cdot \negthinspace}
+
+\newcommand{\nicefrac}[2]{\ensuremath ^{#1}\!\!/\!_{#2}}
+\usepackage { fancybox}
+\end_preamble
+\options handout,serif
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf5
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+New mathematical techniques for weather and climate prediction
+\end_layout
+
+\begin_layout Author
+Hilary Weller, Meteorology, University of Reading
+\end_layout
+
+\begin_layout Date
+1 Sep 2014
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0pt">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/pptUnder.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset VSpace -2.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/graphics/uniLogoName.jpg
+	lyxscale 5
+	scale 5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/graphics/NCAS_logo.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+The best weather forecasting models:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "25col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Itemize
+semi-implicit
+\end_layout
+
+\begin_layout Itemize
+semi-Lagrangian
+\end_layout
+
+\begin_layout Itemize
+lat-lon grid
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "73col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raisebox{-0.9
+\backslash
+height}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/forecastSkill_Wood.png
+	lyxscale 50
+	width 100line%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+courtesy of Nigel Wood, UK Met Office
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+But Parallel scaling is running out
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/hilary/latex/teaching/MTMW14/2014/notes/figs/metoScaling.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+courtesy of Nigel Wood, UK Met Office
+\end_layout
+
+\begin_layout BeginFrame
+Parallel scaling bottlenecks
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.6
+\backslash
+linewidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+linewidth] {../../2011/pLinks/graphics/meshes+latLon+constant+mesh.pdf}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{picture}(0,0)
+\backslash
+put(-110,90) {
+\backslash
+includegraphics[scale=0.42]{../../2011/gungHoNCASJul2011/figs/arrow.pdf}} 
+\backslash
+end{picture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage} 
+\backslash
+hfill 
+\backslash
+begin{minipage}{0.35
+\backslash
+linewidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item lat-lon grid?
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item semi-implicit?
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item semi-Lagrangian?
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+item random memory access $
+\backslash
+rightarrow$ memory bandwidth
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Advantages of Lat-Lon Grids
+\end_layout
+
+\begin_layout Itemize
+Simple and 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ efficient 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Simple to achieve high order accuracy
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The most accurate forecast models (ECMWF and Met Office) both use lat-lon
+ grids
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Can be used with semi-Lagrangian to achieve large time-steps
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Very mature including:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Semi-implicit treatment of acoustic and gravity waves (for long time-steps)
+\end_layout
+
+\begin_layout Itemize
+Conservation of energy
+\end_layout
+
+\begin_layout Itemize
+Charney-Phillips staggering in the vertical (pressure and density staggered
+ to avoid spurious hydrostatic balance)
+\end_layout
+
+\begin_layout Itemize
+Curl free pressure gradients
+\end_layout
+
+\begin_layout Itemize
+Exact numerical solutions for geostrophically balanced flow: 
+\begin_inset Formula $2\Omega\times\mathbf{u}=-g\nabla h$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Alternatives to the lat-lon grid
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+tabcolsep}{2pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/meetings/2011/gungHoNCASJul2011/graphics/shallowWaterTRiSK+WilliSteady+24x48_V2+constant+mesh.pdf
+	lyxscale 50
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/meetings/2011/gungHoNCASJul2011/graphics/shallowWaterTRiSK+WilliSteady+bucky4+constant+mesh.pdf
+	lyxscale 50
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/meetings/2011/gungHoNCASJul2011/graphics/shallowWaterTRiSK+WilliSteady+tri4+constant+mesh.pdf
+	lyxscale 50
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+skipped lat-lon 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hexagonal-icosahedral 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+triangular icosahedral 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics
+	filename /home/hilary/OpenFOAM/hilary-2.2.2/run/shallowWaterSphere/WilliSteady/diamondCubeC/12x12_eq/0/mesh.pdf
+	width 33line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/meetings/2011/gungHoNCASJul2011/graphics/shallowWaterTRiSK+WilliSteady+cube12_Voronoi+constant+meshBlack.pdf
+	lyxscale 50
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/latex/meetings/2011/gungHoNCASJul2011/figs/yinYang.png
+	lyxscale 25
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+diamonds
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cubed sphere 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yin-Yang 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+A mimetic numerical method for these grids
+\end_layout
+
+\begin_layout Itemize
+Arbitrary C-grid for reasonable wave dispersion 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Finite volume for mass conservation
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Simplest pressure gradient
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+enables curl-free pressure gradients
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discrete analogue of 
+\begin_inset Formula $\nabla\cdot\left(\phi\mathbf{u}\right)=\mathbf{u}\cdot\nabla\phi+\phi\nabla\cdot\mathbf{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+enables conservative transfer of energy between kinetic and potential
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Appropriate calculation of 
+\begin_inset Formula $\mathbf{u}^{\perp}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "TRSK09"
+
+\end_inset
+
+ to ensure:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{u}\cdot\mathbf{u}^{\perp}=0$
+\end_inset
+
+ (for energy conservation)
+\end_layout
+
+\begin_layout Itemize
+exact solutions of 
+\begin_inset Formula $f\mathbf{u}^{\perp}+\nabla\phi=0$
+\end_inset
+
+ exist (geostrophic balance)
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow water test case
+\series medium
+\size footnotesize
+ (height errors of solid body rotation after 5 days)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+tabcolsep}{2pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../LTsemMar/graphics/WilliSteady_24x48_r_save_dt3600_quadUpBlend_CN_432000_hDiff15.png
+	lyxscale 20
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../LTsemMar/graphics/WilliSteady_HRbucky_4_save_dt3600_diagonalH_CLUSTPV_CLUSTh_432000_hDiff15.png
+	lyxscale 20
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../LTsemMar/graphics/WilliSteady_tri4_save_CN1hr_midPoint_tol12_2_sampleG_432000_hDiff15.png
+	lyxscale 20
+	width 33line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+skipped lat-lon 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hexagonal-icosahedral 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+triangular icosahedral 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../LTsemMar/graphics/WilliSteady_diamondCubeC_9x9_eq_save_dt3600_asymmetricH_CLUSTPV_CLUSTh_432000_hDiff15.png
+	lyxscale 20
+	width 33line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../LTsemMar/graphics/WilliSteady_cubeCd_12x12_eq_save_dt3600_asymmetricH_CLUSTPV_CLUSTh_432000_hDiff15.png
+	lyxscale 20
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/hilary/projects/gungHo1/Mohamed/alfa=0_h_error.pdf
+	lyxscale 50
+	width 33line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+diamonds
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cubed sphere 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yin-Yang 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Representing Mountains
+\end_layout
+
+\begin_layout Standard
+The ideas from the mimetic finite volume method can be used to improve discretis
+ation over orography
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename /home/hilary/latex/meetings/2014/LTsemMar/figs/orog.fig
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedright
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+For numerous reasons in meteorology the cells should line up in columns
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $\therefore$
+\end_inset
+
+ the mesh is non-orthogonal over orography
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\series bold
+Usual approach
+\series default
+: orthogonal prognostic velocity variables 
+\begin_inset Formula $u$
+\end_inset
+
+, 
+\begin_inset Formula $v$
+\end_inset
+
+, 
+\begin_inset Formula $w$
+\end_inset
+
+ in horizontal and vertical directions
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $\therefore$
+\end_inset
+
+ find 
+\begin_inset Formula $\frac{\partial p}{\partial x}$
+\end_inset
+
+ co-located with 
+\begin_inset Formula $u$
+\end_inset
+
+ without knowing 
+\begin_inset Formula $p$
+\end_inset
+
+ at this altitude (eg Klemp, Zangl)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ pressure gradients not curl free
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ spurious source of vorticity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Alternative: non-orthogonal prognostic variables (covariant) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "WS1x"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename /home/hilary/latex/meetings/2014/LTsemMar/figs/nonOrthog.fig
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedright
+\end_layout
+
+\end_inset
+
+
+\series bold
+Prognostic variables
+\series default
+: 
+\begin_inset Formula $\mathbf{u}\cdot\hat{\mathbf{d}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+where 
+\begin_inset Formula $\mathbf{d}_{e}=\mathbf{x}_{i}-\mathbf{x}_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ curl free pressure gradients
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ no spurious generation of vorticity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Non-orthogonal prognostic variables (covariant)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename /home/hilary/latex/meetings/2014/LTsemMar/figs/UV.fig
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $u_{n}=Hu_{d}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "58col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedright
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Need mass flux 
+\begin_inset Formula $u_{n}=\mathbf{u}\cdot\hat{\mathbf{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+in continuity equation
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Requires operator 
+\begin_inset Formula $H$
+\end_inset
+
+ from space of all 
+\begin_inset Formula $u_{d}$
+\end_inset
+
+s to space of all 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+s.
+\end_layout
+
+\begin_layout Plain Layout
+Use a least squares fit which reconstructs a uniform velocity field exactly
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Results: Warm Bubble Rising Over Orography
+\end_layout
+
+\begin_layout Standard
+Final maximum Courant number, 0.9 (
+\begin_inset Formula $\Delta t=5s$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "49col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Formula $\partial p/\partial x$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "49col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Formula $H$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=0.49
+\backslash
+linewidth,controls,poster=first]{5}{../WCCM/talk/graphics/bubbleRising_hill_save_d
+t5_cubicUpCPCFit_dpdx_CN_animations_meshTheta_}{0}{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=0.49
+\backslash
+linewidth,controls,poster=first]{5}{../WCCM/talk/graphics/bubbleRising_hill_save_d
+t5_cubicUpCPCFit_H_CN_animations_meshTheta_}{0}{5}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Parallel scaling bottlenecks
+\end_layout
+
+\begin_layout Itemize
+lat-lon grid
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+ - there are good alternatives
+\end_layout
+
+\begin_layout Itemize
+semi-implicit?
+\end_layout
+
+\begin_layout Itemize
+semi-Lagrangian?
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Semi-implicit or HEVI
+\end_layout
+
+\begin_layout Standard
+HEVI - horizontally explicit, vertically implicit
+\end_layout
+
+\begin_layout Standard
+Horizontal and vertical Courant numbers, 
+\begin_inset Formula $=c\frac{\Delta t}{\Delta x}$
+\end_inset
+
+, 
+\begin_inset Formula $=c\frac{\Delta t}{\Delta z}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ where 
+\begin_inset Formula $c$
+\end_inset
+
+ is the advection or wave speed 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Using typical values 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta x=$
+\end_inset
+
+ 15km, 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta z=$
+\end_inset
+
+ 200m, 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta t=$
+\end_inset
+
+ 3 mins 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Courant numbers
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Horizontal 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vertical 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+horizontal wind: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80m/s 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-- 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vertical wind: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5m/s 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+speed of sound: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{s}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+340m/s 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gravity waves restrict time step based on 
+\begin_inset Formula $\Delta t\sqrt{\frac{g}{\theta}\frac{\partial\theta}{\partial z}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+So we only really need semi-implicit solution for vertically propagating
+ sound waves and gravity waves 
+\end_layout
+
+\begin_layout Itemize
+We must be able to deal with large vertical advection Courant numbers
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+HEVI: Horizontally Explicit, Vertically Implicit 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Mesh Adaptivity (h-adaptivity)
+\end_layout
+
+\begin_layout Itemize
+Should mesh adaptivity be used with an arbitrarily structured mesh?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/pptUnder.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Resolution where it is most needed
+\end_layout
+
+\begin_layout Itemize
+Save computational time by reducing resolution where not much is happening
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Challenges
+\end_layout
+
+\begin_layout Itemize
+Mesh refinement criteria - where should the mesh be refined in order to
+ improve forecast skill?
+\end_layout
+
+\begin_layout Itemize
+Mesh generation - how should a new mesh be generated based on the refinement
+ criteria?
+\end_layout
+
+\begin_layout Itemize
+Severe time-step restrictions - based on smallest cell size
+\end_layout
+
+\begin_layout Itemize
+Solution mapping - how should the solution be mapped from the old to the
+ new mesh? How will this affect:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+conservation of mass
+\end_layout
+
+\begin_layout Itemize
+hydrostatic balance
+\end_layout
+
+\begin_layout Itemize
+geostrophic balance
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Load balancing - will data on one processor need to be moved to another?
+ (expensive)
+\end_layout
+
+\begin_layout Itemize
+How to avoid waves reflecting where the mesh changes resolution
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Mesh refinement criteria
+\end_layout
+
+\begin_layout Itemize
+Adjoint based:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the adjoint of the model describes the sensitivity of the model to different
+ input variables
+\end_layout
+
+\begin_layout Itemize
+Define a goal - eg calculate the lift and drag of an aerofoil
+\end_layout
+
+\begin_layout Itemize
+Refine the mesh where the adjoint says there is sensitivity to the goal
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="37.5text%">
+<column alignment="center" valignment="top" width="37.5text%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adjoint based adaptivity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Error based adaptivity
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/airfoil.png
+	lyxscale 50
+	width 75text%
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "HH10"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Mesh refinement criteria
+\end_layout
+
+\begin_layout Itemize
+Adjoint based:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The goal of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "PPF+06"
+
+\end_inset
+
+ was to optimise the accuracy of the total enstrophy in an idealised, 2D
+ ocean model
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/PPF+06fig45.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Mesh refinement criteria
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wel09"
+
+\end_inset
+
+ used a coarse resolution model to predict 6 hours in advance where refinement
+ criteria would be high in an idealised, 2D atmosphere model
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=last]{2}{/home/hilary/OpenFOAM/hilary2-dev/run/shallow
+Water/baroInstab/predictAdvectMagGrad/save/dx_6e4_spread_1_magGradVortDiv_1-4e-1
+0/movie/vorticity}{0}{48}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+h-Adaptive Mesh Generation
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lloyd's algorithm
+\series default
+ generates Voronoi meshes based on a given density function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/hilary/OpenFOAM/hilary-2.3.0/run/meshes/sphereMeshes/MongeAmpereV1MedStencil/7/8/0/monitor.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+h-Adaptive Mesh Generation
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lloyd's algorithm
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=first]{5}{/home/hilary/OpenFOAM/hilary-2.3.0/run/meshes/
+sphereMeshes/Lloyd/3/8/movie/mesh}{0}{200}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is very expensive - cost proportional to number of points cubed (in 2D)
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+h-Adaptive Mesh Generation
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Dividing and amalgamating triangles
+\series default
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/cylinderTriangles.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+from Imperial College AMCG group:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www3.imperial.ac.uk/earthscienceandengineering/research/amcg/mesh_adaptivity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+h-Adaptive Mesh Generation
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Block structured adaptivity 
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+before "from "
+key "SJD+08"
+
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/SJD+08fig14h.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow Water Flow Over a Mountain
+\end_layout
+
+\begin_layout Standard
+Relative Vorticity every 12 hours:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=last]{3}{/home/hilary/OpenFOAM/hilary-2.3.0/run/shallowW
+aterSphere/WilliMountain/RinglerLloyd/6/2/movie/vorticity}{0}{30}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow Water Flow Over a Mountain
+\end_layout
+
+\begin_layout Standard
+Relative Vorticity every 1 hour:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=last]{3}{/home/hilary/OpenFOAM/hilary-2.3.0/run/shallowW
+aterSphere/WilliMountain/RinglerLloyd/6/2/movie/vort}{0}{24}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow Water Flow Over a Mountain
+\end_layout
+
+\begin_layout Standard
+Mass divergence every 1 hours:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=first]{3}{/home/hilary/OpenFOAM/hilary-2.3.0/run/shallow
+WaterSphere/WilliMountain/RinglerLloyd/6/2/movie/divhu}{0}{24}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow Water Flow Over a Mountain
+\end_layout
+
+\begin_layout Standard
+With the mesh changing every 12 hours:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=last]{3}{/home/hilary/OpenFOAM/hilary-2.3.0/run/shallowW
+aterSphere/WilliMountain/adaptive/6_1_2_thicker/movie/vort}{0}{25}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow Water Flow Over a Mountain
+\end_layout
+
+\begin_layout Standard
+With the mesh changing every 12 hours:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,poster=first]{3}{/home/hilary/OpenFOAM/hilary-2.3.0/run/shallow
+WaterSphere/WilliMountain/adaptive/6_1_2_thicker/movie/divhu}{0}{25}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+R-adaptivity - mesh redistribution
+\end_layout
+
+\begin_layout Itemize
+Continuous mesh changes
+\end_layout
+
+\begin_layout Itemize
+No changes in mesh topology
+\end_layout
+
+\begin_layout Itemize
+Gradually refined meshes (avoids reflections at changes in resolution)
+\end_layout
+
+\begin_layout Itemize
+No expensive mapping needed between meshes (formulate equations on moving
+ mesh instead)
+\end_layout
+
+\begin_layout Itemize
+No load balancing problems on parallel computers
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+R-adaptive mesh generation
+\end_layout
+
+\begin_layout Itemize
+How to create a mesh which is equidistributed with respect to a monitor
+ function.
+ ie
+\begin_inset Formula 
+\[
+A_{i}m_{i}=\text{const}
+\]
+
+\end_inset
+
+ for each cell 
+\begin_inset Formula $i$
+\end_inset
+
+ with area 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ for mesh monitor function 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Define a map from old mesh point, 
+\begin_inset Formula $\bm{\xi}_{i}$
+\end_inset
+
+, to new mesh points, 
+\begin_inset Formula $\bm{x}_{i}$
+\end_inset
+
+ which is the gradient of a potential
+\begin_inset Formula 
+\[
+\bm{x}=\bm{\xi}+\nabla_{\xi}\phi
+\]
+
+\end_inset
+
+This leads to an 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+optimally transported mesh
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+, free of tangling
+\end_layout
+
+\begin_layout Itemize
+The Jacobian of the mesh transform is the change in area of the cells:
+\begin_inset Formula 
+\[
+|\nabla\bm{x}|=A_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The mesh is found by solving a Monge-Amp
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+re equation for 
+\begin_inset Formula $\phi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+|\nabla_{\xi}\left(\bm{\xi}+\nabla\phi\right)|m\left(x\right)=\text{const}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Numerical solution techniques are fast
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+An Optimally Transported Mesh
+\end_layout
+
+\begin_layout Standard
+Given the monitor function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/hilary/OpenFOAM/hilary-2.3.0/run/meshes/sphereMeshes/MongeAmpereV1MedStencil/7/8/0/monitor.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+An Optimally Transported Mesh
+\end_layout
+
+\begin_layout Standard
+The optimally transported mesh is calculated iteratively:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[width=
+\backslash
+linewidth,controls,every=4,poster=first]{3}{/home/hilary/OpenFOAM/hilary-2.3.0/run
+/meshes/sphereMeshes/MongeAmpereV1/3_anim/8/movie/mesh}{0}{70}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is a linear algorithm - cost proportional to number of points.
+\end_layout
+
+\begin_layout Standard
+Lloyd's algorithm at least cubic
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Shallow Water Flow Over a Mountain
+\end_layout
+
+\begin_layout Standard
+Errors after 15 days using a static Lloyd algorithm mesh versus a static
+ optimally transported mesh
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lloyd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Optimally transported
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/WilliMountain_RinglerLloyd_5_4_0_h0.pdf
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/WilliMountain_MongeAmpereV1_5_4_0_h0.pdf
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/WilliMountain_RinglerLloyd_5_4_1296000_hError100.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/WilliMountain_MongeAmpereV1_5_4_1296000_hError100.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+R-adaptivity versus h-adaptivity
+\end_layout
+
+\begin_layout Standard
+Future work
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Conclusions
+\end_layout
+
+\begin_layout Itemize
+Hexagonal icosahdral meshes are a good quasi-uniform alternative to lat-lon
+\end_layout
+
+\begin_layout Itemize
+Voronoi meshes are suitable for adaptive meshing of the atmosphere
+\end_layout
+
+\begin_layout Itemize
+A numerical method with curl-free pressure gradients is advantages for simulatin
+g flow over orography
+\end_layout
+
+\begin_layout Itemize
+Optimally transported meshes are good alternatives to Lloyd's algorithm
+\end_layout
+
+\begin_layout Itemize
+R-adaptivity may be a good alternative to h-adaptivity for avoiding:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+solution mapping errors when mesh changes
+\end_layout
+
+\begin_layout Itemize
+expensive mapping
+\end_layout
+
+\begin_layout Itemize
+parallel computer load balancing
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "numerics"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

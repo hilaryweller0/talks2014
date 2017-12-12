@@ -1,0 +1,1151 @@
+Tuesday
+11:00 - 13:00
+TECHNICAL SESSIONS
+22/07/2014  11:00 - 13:00
+Meshless and Related Methods, a Minisymposium Dedicated to Celebrate the 80th Birthday of Professor Janusz Orkisz IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Sergio Idelsohn, Pierre Villon, G.R. Liu, Paulo M. Pimenta and Suvranu De 	MS114D
+Room: Mare Nostrum A
+Chair: Paulo Pimenta
+CoChair: Sergio R. Idelsohn
+
+A new version of the PFEM for the free surface and multi-fluid problems
+Julio M. Marti, Sergio R. Idelsohn and Eugenio Oñate
+
+Numerical simulation of unsteady wind-induced conductor oscillations
+Olga Ivanova
+
+Solving interface problems by the regularized method of fundamental solutions
+Csaba Gaspar
+
+Laminate element method for elastic guided wave diffraction simulation
+Evgeny Glushkov, Natalia Glushkova and Artem Eremin
+
+Numerical simulation of a droplet impact onto a thin liquid film using SPH method
+Yuta Kikuchi and Haruo Terasaka
+
+Numerical investigation on particle resuspension in turbulent duct flow via DNS-DEM: Effect of collisions
+Hao Zhang, F. Xavier Trias, Andrey Gorobets, Dongmin Yang, Assensi Oliva and Yuanqiang Tan
+
+22/07/2014  11:00 - 13:00
+HPC-Based CFD Simulations for Industrial Applications IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Mariano Vázquez, Makoto Tsubokura , Takayuki Aoki and Mike Nicolai 	MS208D
+Room: Mare Nostrum B
+Chair: Makoto Tsubokura
+
+Challenges in efficient parallel simulations of spatially resolved packed-bed chromatography
+Mike Nicolai, Andreas Püttmann, Eric von Lieres and Marek Behr
+
+Validation of local SGS models for high Reynolds number flow
+Ken Uzawa, Kenji Ono and Takanori Uchida
+
+Testing Eddy viscosity based and numerically based Les Turbulence Models in the HPC code alya
+Herbert Owen, Matias Avila, Daniel Mira, Ruslan Gabbasov, Guillaume Houzeaux and Mariano Vázquez
+
+Adressing top supercomputers with anisotropic mesh adaptation and multigrid solvers
+Hugues Digonnet, Luisa Silva and Thierry Coupez
+
+Multi-GPU uncertainty quantification for large-scale flow problems
+Peter Zaspel, Christian Rieger and Michael Griebel
+
+Detail-preserving mesh simplification for scientific visualization
+Miguel A. Pasenau and Carlos Andújar
+
+22/07/2014  11:00 - 13:00
+Innovative Methods for Fluid-Structure Interaction IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Harald van Brummelen, Trond Kvamsdal and Roger Ohayon 	MS077D
+Room: Mare Nostrum C
+Chair: Harald van Brummelen
+CoChair: Trond Kvamsdal
+
+FSI modeling and isogeometric techniques for ocean and marine engineering and science applications (Keynote Lecture)
+Yuri Bazilevs
+
+An isogeometric fluid-structure interaction model for implosion
+Jesus Bueno, Yuri Bazilevs, Carles Bona-Casas and Hector Gomez
+
+Immersed Isogeometric Analysis of Fluid-Structure Interation Problems
+Hugo Casquero, Carles Bona-Casas and Hector Gomez
+
+Incompressible Fluid Flow Computations based on NURBS-Enriched Finite Elements
+Raheel Rasool, Callum J. Corbett and Roger A. Sauer
+
+Space-time finite element analysis of free-surface flows with regard to water wheels
+Hans-Henning Schippke, Christian Seidel and Dieter Dinkler
+
+Numerical modeling of piezoelectric energy harvesting devices driven by flow induced vibrations
+Srivathsan Ravi and Andreas Zilian
+
+22/07/2014  11:00 - 13:00
+Computational Damage and Fracture Mechanics IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Michael Brünig and Larissa Driemeier 	MS008D
+Room: Mare Nostrum D
+Chair: Michael Brünig
+
+3d numerical model of hydraulic fracture propagation
+Denis V. Esipov, Vasily N. Lapin and Sergey G. Cherny
+
+Polycrystal Viscoelastic Finite Element Analysis of Creep Defromation Behavior of a Welded Joint in Modified 9Cr-1Mo Steel
+Yuji Nakasone and Jumpei Suzuki
+
+Damage detection in truss structures using wavelet transformation
+Anna Knitter-Piatkowska, Michał Guminiak and Maciej Przychodzki
+
+Modeling of refractory brick furniture in ROTARY-KILN using finite element approach
+Dmitrij Ramanenka, Jesper Stjernberg, Kjell Eriksson and Pär Jonsén
+
+A multiscale continuum modeling of cavitation damage and strain induced crystallization in rubber materials
+Elsiddig Elmukashfi and Martin Kroon
+
+Strong discontinuity method applied to soil/structure interaction in earthquake engineering
+Stefano Cherubini, Benjamin Richard and Alberto Frau
+
+22/07/2014  11:00 - 13:00
+Applications of Error Estimation and Model Adaptation in Computational Mechanics IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Ludovic Chamoin, Pedro Díez, Fredrik Larsson and Kris Van der Zee 	MS010D
+Room: Mare Nostrum E
+Chair: Ludovic Chamoin
+
+Hierarchical model (HiMod) reduction for incompressible fluid dynamics in rigid and deformable pipes (Keynote Lecture)
+Matteo Aletti, Alonso Alvarez, Pablo J. Blanco, Simona Perotto and Alessandro Veneziani
+
+Adaptive surrogate modelling in unsteady transport systems
+Jens Lang, Debora Clever, Pia Domschke and Oliver Kolb
+
+On the verification of PGD reduced-order models
+Florent Pled, Ludovic Chamoin and Pierre Ladevèze
+
+Effective uncertainty quantification using adjoint-based error estimates and surrogate models
+Tim Wildey, Troy Butler and John Jakeman
+
+Blockwise adaptivity for diffuse-interface tumor-growth model
+Xunxun Wu, Kristoffer G. van der Zee, Gorkem Simsek and Harald van Brummelen
+
+Convergence properties of the hierarchical models in coupled electro-mechanical problems
+Grzegorz Zboinski
+
+22/07/2014  11:00 - 13:00
+Advances in Computational Methods for Inverse Problems IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Paul E. Barbone, Dan Givoli and Assad Oberai 	MS075D
+Room: Mare Nostrum F
+Chair: Dan Givoli
+
+Big data meets big models: Large-scale Bayesian inference, with application to inverse modeling of Antarctic ice sheet dynamics (Keynote Lecture)
+Omar Ghattas, Tobin Isaac, James Martin, Noemi Petra and Georg Stadler
+
+On the parameter identification of visco-hyperelastic material models for adhesive tapes
+Nils Hendrik Kröger and Daniel Juhre
+
+Estimation of temperature distribution on inner surface from outer surface temperature using mathematical analysis-based inverse analysis
+Shiro Kubo and Seiji Ioka
+
+An error in constitutive equation approach for frequency-domain viscoelasticity imaging using interior data
+Manuel I. Diaz and Wilkins Aquino
+
+Rational selection of experimental data for inverse structural problems
+Corrado Chisari, Lorenzo Macorini, Claudio Amadio and Bassam A. Izzuddin
+
+Nonlinear feedback control of tethered satellite systems by symplectic conservative approach
+Haijun Peng, Xin Jiang and Biaosong Chen
+
+22/07/2014  11:00 - 13:00
+New Trends in Numerical Methods for Multi-material Compressible Fluid Flows II
+Minisymposium organized by Raphael Loubère, Pierre-Henri Maire and Andrew Barlow 	MS179B
+Room: Llevant
+Chair: Pierre-Henri Maire
+CoChair: Tzanio Kolev
+
+Further developments of an interface-aware subscale dynamics closure model for multimaterial cells
+Andrew J. Barlow, Ryan Hill and Mikhail Shashkov
+
+Triangular metric-based mesh adaptation for compressible multi-material flows in semi-Lagrangian coordinates
+Stephane Del Pino and Isabelle Marmajou
+
+Symmetry preservation and volume consistency in an R-Z staggered scheme
+Pavel Váchal and Burton Wendroff
+
+Modeling non-equilibrium two-phase flow in elastic-plastic porous solids
+Igor Menshov and Alexey Serezhkin
+
+Isotropic properties of Lax-Wendroff methods, with application to Lagrangian hydrocodes
+Tyler B. Lung and Philip L. Roe
+
+2D high-order remapping using mood paradigms
+Raphael Loubère, Milan Kucharik and Steven Diot
+
+22/07/2014  11:00 - 13:00
+Advances in Finite Element Methods for Tetrahedral Mesh Computations II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Guglielmo Scovazzi, Micheal Gee and Elie Hachem 	MS209B
+Room: Mestral
+Chair: Guglielmo Scovazzi
+
+Monotonic stabilized FE approximations of transport problems
+Santiago Badia and Alba Hierro
+
+Enhancements of numerical schemes for and with tetrahedral-based mesh adaptation
+Adrien Loseille
+
+Residual-based variational multiscale turbulence models for unstructured tetrahedral meshes
+Arif Masud, Ramon Calderer and Lixing Zhu
+
+Immersed volume method with anisotropic mesh adaptation and time-stepping control for fluid structure interaction and heat transfer applications
+Ghina Jannoun, Elie Hachem, Jeremy Veysset and Thierry Coupez
+
+Main issues in anisotropic mesh adaptive FMG
+Gautier Brèthes, Olivier Allain and Alain Dervieux
+
+22/07/2014  11:00 - 13:00
+Industrial Applications of Computational Fluid Dynamics and Related Techniques IV 	CS658D
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Room: Ponent 1
+Chair: Raquel Taboada-Vázquez
+
+An investigation of the performance of adaptive IIR filters for active noise control in one-dimensional systems
+Allahyar Montazeri and Jalal Behrouzfar
+
+Rapidity and maneuverability optimization analysis of submersible vehicle based on particle swarm optimization
+Wei Zifan, Yu Qiang and Yang Songlin
+
+Directional fluid-structure interactions and automated database-assisted design for wind
+Emil Simiu and DongHun Yeo
+
+The investigation of the rotationally oscillating plate’s flow field and its three-dimensional numerical simulation
+Ying Sun, Qiu Jin, Zhenggang Cao and Hongyuan Mei
+
+An investigation of cooling characteristics in air-mist cooling by Eulerian-Lagrangian Method with V2F model
+Tsuyoshi Yamamoto, Kakeru Yoshino and Takuya Kuwahara
+
+CFD study of a CO2 ejector performance installed in large cooling systems working at different ambient conditions
+Jacek Smolka, Michal Palacz, Zbigniew Bulinski, Krzysztof Banasiak, Andrzej J. Nowak, Adam Fic and Armin Hafner
+
+22/07/2014  11:00 - 13:00
+Advanced Methods in Computational Fluid Dynamics IV 	CS655D
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Room: Ponent 2
+Chair: Goran Stipcich
+CoChair: Jesús María Blanco
+
+A Vertex-Based High-Order Finite-Volume scheme for three-dimensional compressible flows on tetrahedral mesh
+Marc Charest, Thomas Canfield, Nathaniel Morgan, Jacob Waltz and John Wohlbier
+
+Flow decomposition analysis of the aeroacoustic wall pressure generated by automobile side mirror
+Sarah Julisson, Eric Gaudard, Régis Marchiano and Philippe Druault
+
+Effect of upstream flow conditions on acoustic feedback-loop interactions in transitional airfoils
+Vladimir Golubev, Lap Nguyen, Michel Roger, Reda Mankbadi and Sam Salehian
+
+An always accurate and sometimes exact discretization of the convection-diffusion equation in 1D and 2D
+Antonio Pascau and Francisco Alcrudo
+
+Numerical simulation of one-dimensional flow in elastic and viscoelastic branching tube
+Ivan Korade, Zdravko Virag and Mario Šavar
+
+Investigation of heat and mass transfer processes and phase transformation in motion of water droplets through high-temperature gas area
+Roman S. Volkov, Geniy V. Kuznetsov and Pavel A. Strizhak
+
+22/07/2014  11:00 - 13:00
+Multiscale Methods and Applications in Computational Mechanics IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Weiqing Ren and Yang Xiang 	MS116D
+Room: Terral
+Chair: Yang Xiang
+
+Extending the multiscale arlequin framework to coupling of models in dynamic regime
+Khalil Abben and Hachmi Ben-Dhia
+
+Multiscale method using static and transient subscales to solve transport flow problems
+Lucia Catabriga, Andrea M.P. Valli, Regina C. Almeida and Isaac P. Santos
+
+A multi-scale approach for estimation of real contact area and frictional behaviour of rubber sliding on rough surfaces
+Hagen Lind and Matthias Wangenheim
+
+Local stress calculations: Importance of force decomposition
+Alejandro Torres Sánchez, Juan M. Vanegas and Marino Arroyo
+
+Lattice Boltzmann method as a fine scale solver in multiscale method modeling surface texture
+Michał Dzikowski and Jacek Rokicki
+
+Macro and micro residual stresses in Zirconium oxide layers
+Serge Pascal, Clotilde Berdin and Zhao Yue Zao
+
+22/07/2014  11:00 - 13:00
+Domain Decomposition Methods, High-Performance Technologies and Applications to Petroleum and Water Resources I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Ismael Herrera, Zhangxin (John) Chen , Graciela Herrera-Z and Martin Díaz 	MS085A
+Room: Tramuntana 1
+Chair: Ismael Herrera
+
+Non-overlapping discretization methods
+Ismael Herrera
+
+Algorithms that achieve the DDM-paradigm for symmetric systems of equations
+Iván Contreras and Ismael Herrera
+
+Block strategies to speed up convergence in non-overlapping domain decomposition methods
+Pierre Gosselet and Daniel Rixen
+
+DDM applied to subsurface flow and transport
+Guillermo Hernández–García
+
+A balancing preconditioner of iterative domain decomposition methods for magnetostatic problems
+Daisuke Tagami
+
+22/07/2014  11:00 - 13:00
+Mechanobiology of Cellular Systems I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Marino Arroyo, Antonio DeSimone and Jose J. Muñoz 	MS255A
+Room: Tramuntana 2
+Chair: Marino Arroyo
+
+Numerical and analytic computation of elastic interactions between membrane proteins
+Osman Kahraman, Peter D. Koch, William S. Klug and Christoph A. Haselwandter
+
+Insights into cytoplasmic rheology gained from modeling cellular blebbing
+Wanda Strychalski and Robert Guy
+
+Towards patient-specific simulations and validation of a tumor angiogenesis model using isogeometric analysis
+Guillermo Vilanova, Ignasi Colominas, Thomas J.R. Hughes and Hector Gomez
+
+Electromechanical response of neuronal cells
+Prashant Purohit
+
+Biological and artificial motility at microscopic scales
+Antonio DeSimone, Luca Heltai and Giovanni Noselli
+
+22/07/2014  11:00 - 13:00
+Differential Reynolds Stress Modeling for Separating Flows in Industrial Aerodynamics I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Bernhard Eisfeld and Rolf Radespiel 	MS105A
+Room: Xaloc
+Chair: Bernhard Eisfeld
+
+Evaluation of a differential Reynolds stress model incorporating near-wall effects in a compressor cascade tip-leakage flow
+Christian Morsbach, Martin Franke and Francesca di Mare
+
+Application of Reynolds stress models to separated aerodynamic flows
+Christopher L. Rumsey
+
+Separated flow predicition around a 6:1 prolate spheroid using Reynolds stress models
+Yair Mor-Yossef
+
+Influence of pressure-strain closure on the prediction of separated flows
+G.A. Gerolymos and I. Vallet
+
+Modeling of Reynolds-stress augmentation in shear layers with strongly curved velocity profiles
+René-Daniel Cécora, Rolf Radespiel and Suad Jakirlic
+
+Dynamic wall modelling for large-eddy simulations. Application to high Reynolds number aerodynamics of complex geometries
+Joan Calafell, Angel Carmona, Oriol Lehmkuhl, Carles D. Pérez-Segarra and Assensi Oliva
+
+22/07/2014  11:00 - 13:00
+Advanced Reduced-order Modeling Strategies for Parametrized PDEs and Applications I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Gianluigi Rozza and Andrea Manzoni 	MS069A
+Room: Salon Club
+Chair: Gianluigi Rozza
+CoChair: Benjamin Stamm
+
+Reduced basis approaches for the big data framework
+Yvon Maday
+
+ECSW: An energy-conserving sampling and weighting method for the hyper reduction of discrete nonlinear finite element models
+Charbel Farhat, Todd Chapman and Philip Avery
+
+Closure modeling for the proper orthogonal decomposition of turbulent flows: Models and analysis
+Traian Iliescu
+
+Energy-stable Galerkin reduced order models for nonlinear compressible flow
+Irina Kalashnikova, Matthew Barone, Srinivasan Arunajatesan, Bart G. van Bloemen Waanders and Jeffrey Fike
+
+Data-driven reduced-order modeling to support online decision-making for a self-aware aircraft
+Laura Mainini and Karen Willcox
+
+Data-driven model order reduction for state and model-bias estimation
+Masayuki Yano, James Penn, Tommaso Taddei, Anthony Patera and Yvon Maday
+
+22/07/2014  11:00 - 13:00
+Computational Methods in Fluid-structure Interactions, Dynamics and Vibration, Vibroacoustics - A Minisymposium in Honor of Prof. Roger Ohayon IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Christian Soize 	MS009D
+Room: Yasmin A
+Chair: Roger Ghanem
+CoChair: Christian Soize
+
+An adaptive interpolatory model reduction method for vibroacoustic problems (Keynote Lecture)
+Charbel Farhat, Ulrich Hetmaniuk and Radek Tezaur
+
+Simulation of vibro-acoustic response by fast BEM and FEM coupling
+Lothar Gaul
+
+Exploring multi-functionality in poro-elastic materials with consideration given to some aspects related to the influence of scale, shape and space
+Peter Göransson
+
+Vibroacoustic modeling of structures with attached noise control materials using wave-based methods
+Noureddine Atalla and Luca Alimonti
+
+Computational strategies for acoustic transmission studies
+Jean-Pierre Coyette, Gregory Lielens and Benoit Van den Nieuwenhof
+
+Structural acoustics with interface damping: Various considerations about static terms for efficient dynamic behavior description
+Morvan Ouisse and Emeline Sadoulet-Reboul
+
+22/07/2014  11:00 - 13:00
+Multiscale and Multiphysics Modelling for Complex Materials (MMCM5) I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Patrizia Trovalusci, Tomasz Sadowski, René de Borst and Bernhard Schrefler 	MS120A
+Room: Yasmin B
+Chair: Bernhard Schrefler
+CoChair: Patrizia Trovalusci
+
+Multi-time scaling induced image based crystal plasticity FE models for predicting fatigue in polycrystalline alloys (Keynote Lecture)
+Somnath Ghosh
+
+Influence of stiffness variation in timber boards on effective behavior of GLT beams
+Georg Kandler, Leopold Wagner, Josef Füssl, Erik Serrano and Josef Eberhardsteiner
+
+A biphase model for concrete subject to sulfate attack
+Nicola Cefis and Claudia Comi
+
+A computational study of flexoelectricity in nanostructures
+Amir Abdollahi, Christian Peco, Daniel Millán, Marino Arroyo and Irene Arias
+
+Temperature influence on smart structures: A first approach
+Francesco Bonaldi, Giuseppe Geymonat, Françoise Krasucki and Michele Serpilli
+
+22/07/2014  11:00 - 13:00
+Phase-field Modeling and Simulation in Fluid Mechanics, Solid Mechanics and Life-sciences I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Hector Gomez, Kris van der Zee, Marino Arroyo, Irene Arias, Baskar Ganapathysubramanian, Thomas J.R. Hughes and John T. Oden 	MS143A
+Room: Yasmin C
+Chair: Irene Arias
+CoChair: Marino Arroyo
+
+Phase field modeling of brittle and ductile fracture in multi-physics environments (Keynote Lecture)
+Christian Miehe, Heike Ulmer and Lisa Schänzel
+
+Three-dimensional phase-field simulation of crack propagation in ferroelectric polycrystals
+Amir Abdollahi and Irene Arias
+
+A massively parallel program to solve the phase field formulation for crack propagation
+Vahid Ziaei-Rad and Yongxing Shen
+
+Fracture based arc-length control for phase field modeling of the hydraulic fracturing
+Nitish Singh, Clemens V. Verhoosel and Harald van Brummelen
+
+Phase-field modelling of stress evolution in heterogen structures
+Daniel Schneider, Oleg Tschukin, Abhik Choudhury, Michael Selzer and Britta Nestler
+
+A Self-consistent atomistic-phase field model for the study of ge nanocrystallization
+C. Reina, L. Sandoval and Jaime Marian
+
+22/07/2014  11:00 - 13:00
+STS 01: Multi-Physics Green Challenges in Aeronautics: The EC Grain2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EU-China Networking Project 	STS01A
+Room: Auditorium
+Chair: Jacques Periaux
+
+High-performance issues for aeronautics design
+Toan Nguyen and Benoit Lange
+
+Airframe flight physics key green technologies (KGT2) synthesis and proposal for future work
+Adel Abbas and Eusebio Valero
+
+Modelling and simulation of airframe flow and noise genration
+Shia-Hui Peng
+
+Combustion Simulation with Particular Reference to Green Aviation
+Yao Zheng, Jianfeng Zou and Shuai Zhang
+
+Experimental modeling of low pressure turbine blades at low Reynolds and high mach numbers
+Tony Arts
+
+22/07/2014  11:00 - 13:00
+Advances in Accurate and Robust Numerical Methods for Computational Fluid Dynamics IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Remi Abgrall, Feng Xiao and Koen Hillewaert 	MS051D
+Room: Sala A
+Chair: Ioannis Nikolos
+CoChair: Yiqing Shen
+
+Natural convection and low mach number flows simulation using a compressible high-order finite volume scheme
+Quentin Dubois, Florian Haider, Bernard Courbet and Jean-Pierre Croisille
+
+A higher-order finite volume method based on Moving Least Squares for the resolution of the incompressible Navier Stokes on unstructured grids
+Luis Ramírez, Xesús Nogueira, Sofiane Khelladi, Jean-Camille Chassaing and Ignasi Colominas
+
+A robust numerical scheme for incompressible Navier-Stokes using B-Splines and Least-Squares
+Chennakesava Kadapa, Wulf G. Dettmer and Djordje Peric
+
+Accurate and robust multi-moment finite volume solver on unstructured grids for incompressible flows
+Feng Xiao and Bin Xie
+
+Highly accurate dispersion relation preserving schemes for incompressible flows
+Frédéric Bauer, Sedat Tardu and Olivier Doche
+
+22/07/2014  11:00 - 13:00
+Computational Models for Soft Tissues I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Estefania Peña, Renato N. Jorge, Miguel A Martinez and Pedro S. Martins 	MS067A
+Room: Sala B1
+Chair: Renato Natal
+
+Identification of anisotropic directions in soft tissue and their simulation with p-version finite elements
+Xuhui Li, Stefan Raith, Mikhail Itskov and Mahmood Jabareen
+
+A rate dependent microstructural constitutive model of inelastic effects in soft fibred tissues
+Estefanía Peña, Pablo Saez and Miguel A. Martínez
+
+On simulating skeletal muscle fatigue. A 3D electro-mechanical continuum model
+Marta Sierra, Jorge Grasa, María J. Muñoz, Francisco J. Miana-Mena and Begoña Calvo
+
+Annulus fibrosus model identification enriched by transverse strain measurements
+Adrien Baldit, Dominique Ambard, Fabien Cherblanc and Pascale Royer
+
+Biomechanical simulation of ligament damage: Its clinical relevance
+Sofia Brandão, Marco Parente, Ana Rita Silva, Thuane da Roza, Teresa Mascarenhas, Isabel Ramos and Renato M. Natal Jorge
+
+Disjoint domains interactions framework for hyperelastic simulations
+Ulrik Bonde, Marek K. Misztal, Vincent Visseq and Kenny Erleben
+
+22/07/2014  11:00 - 13:00
+Fluid-Structure Interaction Algorithms and Applications I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Jonathan Pitt and Scott Miller 	MS062A
+Room: Sala B2
+Chair: Cooper Elsworth
+
+Electro-hydrodynamic effect on DNA dynamics during DNA transport
+Sookkyung Lim
+
+A simulation tool for parachute/payload systems
+Roberto Flores, Enrique Ortega, Jordi Valles and Eugenio Oñate
+
+Fluid structure interaction with inconsistent software platforms
+David Grasselt, Klaus Höschler and Aris Konstantinidis
+
+Fluid-structure interaction analysis of wind turbine blade profiles
+Dorothee Pieper, Thomas Grätsch and Michael Breuer
+
+Modelling of waves and wave-structure interactions using non-linear numerical models
+Axelle Viré, Johannes Spinneken, Matthew D. Piggott, Christopher C. Pain and Stephan C. Kramer
+
+Numerical investigation of freely falling objects using direct-forcing immersed boundary method
+Ming-Jyh Chern, Dedy Z. Noor and Tzyy-Leng Horng
+
+22/07/2014  11:00 - 13:00
+Modeling of Plasticity and Damage under Cyclic Loading II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Renato Natal, Abílio Jesus and Francisco Pires 	MS039B
+Room: Sala B3
+Chair: Abilio de Jesus
+CoChair: Jorge Belinha
+
+Numerical implementation of a simple model for directional distortional hardening in metal plasticity
+René Marek, Jiri Plesek, Zbyněk Hrubý, Slavomír Parma, Heidi P. Feigenbaum and Yannis F. Dafalias
+
+Cyclic material behaviour of welded ultra high-strength steels
+Benjamin Möller , Rainer Wagener and Tobias Melz
+
+Harmonic model for nonlinear thermo-mechanical analysis of hot mill rolls
+Denis Benasciutti, Francesco De Bona and Mircea Gh. Munteanu
+
+Inelastic Analysis of Modified 9Cr-1Mo Steel in High Temperature
+HanBum Surh, Hoomin Le, Jae Boong Choi, Moon Ki Kim, NamSu Huh and Andong Shin
+
+The influence of direction-modulated loading conditions on the lifetime of filled elastomers
+Daniel Juhre and Maria Krause
+
+Material modelling for metals considering dynamic plasticity
+Bahar Ayhan and Adnan Ibrahimbegovic
+
+22/07/2014  11:00 - 13:00
+Methods for Cut and Composite Meshes: Theory, Algorithms and Applications II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Erik Burman, Mats G. Larson, Anders Logg, André Massing and Wolfgang Wall 	MS192B
+Room: Sala C1
+Chair: Andre Massing
+
+Image-based simulations using the unfitted DG method
+Christian Engwer
+
+XFEM and stabilization for 3D incompressible two-phase flows
+Sven Gross
+
+Unfitted Nitsche Finite Element Methods for multi-physics problems
+Susanne Claus, Andre Massing and Erik Burman
+
+Higher degree Immersed Finite Element methods for interface problems
+Slimane Adjerid and Tao Lin
+
+Nearly body-fitted meshes for transient flows with embedded geometries
+Dieu-Linh Quan, Jean-François Remacle, Emilie Marchandise and Thomas Toulorge
+
+22/07/2014  11:00 - 13:00
+Growth and Remodeling of Living Tissues II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Rafael Grytz, Seungik Baek and Ellen Kuhl 	MS097B
+Room: Sala C2
+Chair: Rafael Grytz
+
+Effect of scleral anchorage on the perfusion of the lamina cribrosa
+Daniele Prada, Giovanna Guidoboni, Samuele Terragni, Riccardo Sacco, Paola Causin, Brent A. Siesky and Alon Harris
+
+A Tissue Engineering Strategy for Soft Tissue Growth
+Ellen Arruda
+
+Changing hyperelastic properties of the tree shrew sclera during visually-guided remodeling
+Rafael Grytz, John T. Siegwart and Thomas T. Norton
+
+Growth prediction of abdominal aortic aneurysms and its association of intraluminal thrombus
+Seungik Baek, Byron Zambrano, Jongeun Choi and Chae-Young Lim
+
+An integrated remodeling to fracture model of bone
+Ibrahim Goda and Jean-François Ganghoffer
+
+22/07/2014  11:00 - 13:00
+Modeling and Analysis of FGM Structures II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Justin Murin, Stephan Kugler and Mehdi Aminbaghai 	MS088B
+Room: Sala C3
+Chair: Stephan Kugler
+CoChair: Justin Murin
+
+Thermoelasticity in FGM shell structures (Keynote Lecture)
+Peter A. Fotiu, Stephan Kugler and Justin Murin
+
+Thermal post-buckling response of sandwich functionally graded materials (FGM) plates resting on the Pasternak foundation
+Maciej Taczala, Ryszard Buczkowski and Michal Kleiber
+
+Transient thermoelastic analysis of a functionally graded hollow sphere with piecewise power law
+Yoshihiro Ootao and Masayuki Ishihara
+
+Residual stress in RF magnetron sputtered ZnO thin films on GaP substrates and nanowires
+Dalibor Buc, Jaroslav Kovac, Vladimir Kutis, Justin Murin, Maria Caplovicova, Jaroslava Skriniarova, Patrik Novak, Jozef Novak, Stanislav Hasenohrl and Edmund Dobrocka
+
+On the finite element implementation of the elastic gradient inherent to FGMs
+Emilio Martínez-Pañeda and Rafael Gallego
+
+22/07/2014  11:00 - 13:00
+Fast Direct Solvers: Applications to Boundary Element Methods and Other Linear Systems I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Stéphanie Chaillat-loseille, Eric Darve and Martin Schanz 	MS200A
+Room: Sala D1
+Chair: Eric Darve
+
+A new analytic preconditioner for the iterative solution of Dirichlet exterior scattering problems in 3D elasticity
+Stéphanie Chaillat, Marion Darbas and Frédérique Le Louër
+
+Fast multipole preconditioners for sparse linear solvers
+Huda Ibeid, Rio Yokota, Jennifer Pestana and David Keyes
+
+Fast multipole boundary element method for multizone problems
+Quoc Tuan Trinh, Saida Mouhoubi, Cyrille Chazallon and Marc Bonnet
+
+A simple multi-domain BEM with the fast multipole method
+Yijun Liu and Shuo Huang
+
+A data efficient, CQM-based BEM approach for elastodynamics
+Bernhard Kager and Martin Schanz
+
+22/07/2014  11:00 - 13:00
+Advances in Computational Structural Dynamics I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Evangelos J. Sapountzakis and Andreas E. Kampitsis 	MS018A
+Room: Sala D2
+Chair: Roman Lewandowski
+
+Determination of dynamic characteristics and their design sensitivities for structures with viscoelastic dampers (Keynote Lecture)
+Roman Lewandowski , Małgorzata Łasecka-Plura and Zdzisław Pawlak
+
+Development of efficient models for the study of complex rotating machines and of the rotors-foundations interaction
+Enrico Meli, Alice Innocenti, Lorenzo Marini, Giovanni Pallini, Andrea Rindi and Stefano Rossin
+
+Simulation of the dynamic interaction between pantograph and overhead line using a coupled FEM - Multibody procedure
+Angela Bautista and Publio Pintado
+
+Development of a transient structural analysis algorithm by using FETI-local method
+JunYoung Kwak, Haeseong Cho, SangJoon Shin and Olivier A. Bauchau
+
+Seismic Evaluation of Braced Steel Structures with and without Viscous Dampers for near Fault Ground motions
+Fariman Ranjbaran and Ali Mahdizade
+
+Non-linear dynamic soil structure interaction using Bouc - Wen type hysteretic models
+Eleftherios Asiminas and Vlasis K. Koumousis
+
+22/07/2014  11:00 - 13:00
+Advances in Computational Models for Vertebrate Structures in Biology and Palaeontology I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Jordi Marcé-Nogué, Josep Fortuny and LLuís Gil 	MS078A
+Room: Sala D3
+Chair: Jordi Marcé-Nogué
+CoChair: Josep Fortuny
+
+Computational mechanics sheds new light on the paleobiology of early tetrapods
+Josep Fortuny, Jordi Marcé-Nogué, Lluís Gil, Montserrat Sanchez and Àngel Galobart
+
+The seahorse tail as inspiration for serially articulated systems
+Celine Neutens, Tomas Praet, Matthieu De Beule, Manuel Dierick and Dominique Adriaens
+
+New method to validate FEA on palaeobiological modeling
+Alejandro Perez-Ramos, Miquel De Renzi and Josep Fortuny
+
+Quantitative interpretation of tracks for determination of body mass using finite element analysis
+Tom Schanz, Hanna Viefhaus and Long Nguyen-Tuan
+
+Advances in methodologies and metrics for comparison of biological computational models
+Christian Escrig, Soledad de Esteban-Trivigno, Lluís Gil, Daniel DeMiguel, Josep Fortuny and Jordi Marcé-Nogué
+
+Flexible multibody approach in application to the feeding mechanism in vertebrate structures
+Jordi Marcé-Nogué and Adam Klodowski
+
+22/07/2014  11:00 - 13:00
+Advances with Adjoint CFD Solvers for Unsteady Flow I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Jens-Dominik Mueller, Carsten Othmer, Jacek Rokicki, Kyriakos Giannakoglou, Uwe Naumann, Marcus Meyer, Eugene de Villiers, Mustafa Megahed and Laurent Hascoet 	MS214A
+Room: Sala D4
+Chair: Marcus Meyer
+
+Stabilisation of discrete adjoint solvers through improved primal timestepping (Keynote Lecture)
+Shenren Xu and Jens-Dominik Mueller
+
+A Discrete Adjoint version of an Unsteady Incompressible solver for OpenFOAM using Algorithmic Differentiation
+Arindam Sen, Markus Towara and Uwe Naumann
+
+Toward a discrete adjoint model of ACE+
+Zahrasadat Dastouri, Johannes Lotz and Uwe Naumann
+
+Adjoints of fixed-point iterations
+Ala Taftaf, Valerie Pascual and Laurent Hascoët
+
+Towards unsteady adjoint analysis for turbomachinery applications
+Georgios Ntanakas and Marcus Meyer
+
+22/07/2014  11:00 - 13:00
+Numerical Predictions of Detached Flows I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Esteban Ferrer, Eusebio Valero and Vincent Couaillier 	MS126A
+Room: Sala D5
+Chair: Esteban Ferrer
+
+Assessment of turbulence closures for detached flows control
+Jérémie Labroquère, Régis Duvigneau and Emmanuel Guilmineau
+
+Vortex shedding and its suppression for a shear flow past a circular cylinder
+Kai-Wen Chang and Jiahn-Horng Chen
+
+A residual-based variational multiscale Discontinuous Galerkin method for turbulent flows
+Göktürk Kuru, Marta de la Llave Plata, Vincent Couaillier and Rémi Abgrall
+
+Numerical simulation of high-speed impulsive noise of the PZL W-3A “Sokol” (Falcon) helicopter main rotor in forward flight
+Piotr Doerffer, Oskar Szulc, Fernando L. Tejero Embuena, Jerzy Żółtak and Jacek Małecki
+
+Implicit Large Eddy Simulation of high-speed impinging jets
+Nagore Álvarez-Saiz, Ander Zarketa, Marta Cordero-Gracia and Eusebio Valero
+
+3D p-adaption for compressible flow
+Dirk Ekelschot, Joaquim Peiro, Spencer J. Sherwin, David Moxey and Cristian Biotto
+
+22/07/2014  11:00 - 13:00
+Innovative Fictitious Domain Approaches for High-order Methods and IGA I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Alexander Düster, Ernst Rank and Dominik Schillinger 	MS117A
+Room: Sala D6
+Chair: Ernst Rank
+
+The spectral cell method for wave propagation analysis of heterogeneous materials (Keynote Lecture)
+Alexander Düster, Meysam Joulaian, Sascha Duczek and Ulrich Gabbert
+
+Dynamic analysis of high loaded components, discretized by fictitious domain methods
+Vera Nübel, Ali Shadavakhsh, Mohamed Elhaddad, Nils Zander and Stefan Kollmannsberger
+
+The spectral cell method for smart structure applications
+Sascha Duczek, Meysam Joulaian, Alexander Düster and Ulrich Gabbert
+
+The finite cell method applied to nonlocal damage mechanics
+Maedeh Ranjbar, Mohammad Mashayekhi, Jamshid Parvizian, Alexander Düster and Ernst Rank
+
+A contact formulation based on high order fictitious domain methods
+Tino Bog, Nils Zander, Stefan Kollmannsberger and Ernst Rank
+
+Efficient exact integration of NURBS and T-splines within a 3D-Cartesian grid framework
+Onofre Marco, Rubén Sevilla, Yongjie Zhang, Manuel Tur and Juan J. Ródenas
+
+22/07/2014  11:00 - 13:00
+Model-Based Simulation of Structural Responses to Extreme Loading Conditions II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Xiong Zhang, Zhen Chen and Cheng Wang 	MS070B
+Room: Sala E1
+Chair: Xiong Zhang
+CoChair: Shaker Meguid
+
+Energy absorption in axial crushing of foam filled thin walled conical frusta (Keynote Lecture)
+Shaker Meguid
+
+A coupled finite difference material point method for high explosive explosion problems
+Xiaoxiao Cui and Xiong Zhang
+
+High order discontinuous Galerkin positivity-preserving numerical simulation of condensed explosives detonation
+Cheng Wang, Xinqiao Liu, Yong Bi and Jianguo Ning
+
+Numerical modeling and analysis of STF-based liquid armor materials under ballistic impact
+Kwon Joong Son, Hee Keun Cho and See Jo Kim
+
+Pseudo arc-Length method with moving mesh for shock wave propagation
+Xing Wang, Tianbao Ma and Jianguo Ning
+
+22/07/2014  11:00 - 13:00
+Recent Developments in Fluid–structure Interactions of Physiological Systems I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Jeff D. Eldredge and Rajat Mittal 	MS229A
+Room: Sala E2
+Chair: Jeff Eldredge
+
+Fluid dynamics and blood damage in artificial heart valves: Biological vs. mechanical aortic prostheses
+Marco D. de Tullio
+
+Image-guided fluid-structure interaction simulations of heart valve prosthesis
+Anvar Gilmanov and Fotis Sotiropoulos
+
+Multiscale modeling and optimal treatment planning in pediatric cardiology
+Alison L. Marsden, Mahdi Esmaily-Moghadam, Daniele Schiavazzi, Ethan Kung, Jeffrey Feinstein, Francesco Migliavacca and Tain-Yen Hsia
+
+Computational modeling of the effect of mitral-valve leaflet dynamics on intraventricular flow
+Jung-Hee Seo, Kourosh Shoele and Rajat Mittal
+
+Mitral valve modelling for left ventricle flow
+Gianni Pedrizzetti and Federico Domenichini
+
+22/07/2014  11:00 - 13:00
+Computational Mechanics of Wood Materials and Timber Structures II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Josef Eberhardsteiner, Michael Kaliske, Erik Serrano and Josef Füssl 	MS081B
+Room: Sala E3
+Chair: Michael Kaliske
+CoChair: Sigurdur Ormarsson
+
+A probabilistic model to account for stiffness variation in glued laminated timber
+Georg Kandler, Josef Füssl and Josef Eberhardsteiner
+
+Continuum modelling and simulations of pressboard with temperature/moisture effects
+Denny Tjahjanto, Anna Ask, Orlando Girlanda, Sören Östlund and Johan Ekh
+
+Implementation of fully coupled heat and mass transport model to determine temperature and moisture state at elevated temperatures
+Robert Pečenko, Tomaž Hozjan and Staffan Svensson
+
+Extended beam model for simulation of hygro-mechanical and visco-elastic deformations in inhomogeneous timber structures
+Sigurdur Ormarsson and Ola Dahlblom
+
+22/07/2014  11:00 - 13:00
+Advances in Numerical Methods for Flexible Multibody Mechanics I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Olivier Bauchau, Olivier Bruls and Alberto Cardona 	MS235A
+Room: Sala E4
+Chair: Olivier Bruls
+CoChair: Juan Carlos García Orden
+
+A simple torsion-free nonlinear beam element for multibody dynamics (Keynote Lecture)
+Juan C. García Orden and Javier Cuenca Queipo
+
+Formulation of a non-linear shell finite element on the lie group SE (3)
+Valentin Sonneville and Olivier Brüls
+
+Nonlinear analysis of tape springs: Comparison of two geometrically exact finite element formulations
+Florence Dewalque, Valentin Sonneville and Olivier Brüls
+
+On a consistent application of Newton‘s law to mechanical systems with motion constraints
+Sotirios Natsiavas and Elias Paraskevopoulos
+
+22/07/2014  11:00 - 13:00
+Practical Aspects of Advanced CFD Simulations on Emerging Multi- and Manycore Systems II
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Dominik Göddeke and Matthias Möller 	MS119B
+Room: Sala E5
+Chair: Matthias Möller
+
+Flux vector splitting methods for the Euler equations on 3D unstructured meshes for CPU/GPU clusters
+Manfred Liebmann and Zoltán Horváth
+
+Edge-based solvers for the compressible Euler equations on multicores and GPUs
+Matthias Möller
+
+Direct numerical simulation of turbulent flows with parallel algorithms for various computing architectures
+Andrey Gorobets, F. Xavier Trias, Ricard Borrell , Guillermo Oyarzún and Assensi Oliva
+
+Direct numerical simulation of the turbulent mixing in Richtmyer Meshkov instability
+Han Liu and Zuoli Xiao
+
+Cut-cell method: Application to water waves generated by a submerged obstacle
+Julien Dambrine, Nicolas James and Germain Rousseaux
+
+A parallel second-order cut-cell method: Validation and simulation at moderate Reynolds numbers
+Francois Bouchon, Thierry Dubois and Nicolas James
+
+22/07/2014  11:00 - 13:00
+Biomechanics and Applied Dynamics I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Josep M. Font-Llagunes and József Kövecses 	MS134A
+Room: Sala E6
+Chair: Josep M. Font-Llagunes
+CoChair: Daniel Garcia Vallejo
+
+Optimization of the flight style in ski jumping
+Alexander Jung, Manfred Staat and Wolfram Müller
+
+A multi-scale study of the hip joint mechanics using rigid-body inverse dynamics and finite element analysis
+Albert Peiret, Ernest Bosch, Gil Serrancolí, Jérôme Noailly and Josep M. Font-Llagunes
+
+A spatial dynamic model to investigate hip squeaking and contact point path in hip implants
+Ehsan Askari, Paulo Flores, Danè Dabirrahmani and Richard Appleyard
+
+Designing optimal controls by parameter optimization for a stance-control knee-ankle-foot orthosis
+Josep M. Font-Llagunes and Daniel García-Vallejo
+
+The influence of muscle modeling methods and paths on head and neck response
+Courtney A. Cox, Alan T. Dibb, Hattie C. Cutcliffe, Roger W. Nightingale, Barry S. Myers, Anita N. Vasavada, Bethany L. Suderman and Cameron R. Bass
+
+Modelling of car occupant muscle responses in a finite element human body model
+Jonas Östh, Jóna Marín Ólafsdóttir and Karin Brolin
+
+22/07/2014  11:00 - 13:00
+Computational Contact Mechanics IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Tod Laursen, Peter Wriggers and Giorgio Zavarise 	MS044D
+Room: Sala F
+Chair: Peter Wriggers
+
+A conjugate gradient based method for frictional contact problems
+Jing Zhao, Edwin.A.H. Vollebregt and Cornelis. W. Oosterlee
+
+A modified perturbed Lagrangian formulation for contact problems
+Manuel Tur, José Albelda, Juan J. Ródenas and José M. Navarro-Jiménez
+
+An accurate and robust contact resolution algorithm for finite-discrete element modelling
+Hu Chen, Y.X. Zhang, Mengyan Zang and Paul J. Hazell
+
+A new direct elimination algorithm for quasi-static and dynamic contact problems
+Daniel Di Capua and Carlos Agelet de Saracibar
+
+Interior point method based contact algorithm for structural analysis of electronic device models
+Kazuhisa Inagaki, Gaku Hashimoto and Hiroshi Okuda
+
+Surface-to-surface penalty contact for quadratic elements
+Guido D. Dhondt, Jaro Hokkanen and Hans-Peter Hackenberg
+
+22/07/2014  11:00 - 13:00
+Computational Modeling of Fracture and Failure of Materials and Structures IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Olivier Allix, Milan Jirásek, Nicolas Moës and Xavier Oliver 	MS226D
+Room: Sala H 1
+Chair: Olivier Allix
+
+Modelling of ductile fracture initiation in sheet metal structures with spatially varying microstructure and properties
+Rickard Östlund and Mats Oldenburg
+
+On the subscale enrichment of crack tip element in XFEM and the phantom node method
+Salar Mostofizadeh, Lambertus J. Sluys, Martin Fagerström, Frans P. van der Meer and Ragnar Larsson
+
+Tikhonov regularization for the modified mapping-collocation method applied to circumferential crack in a curved beam
+Aydin Amireghbali and Demirkan Coker
+
+Crack propagation in a Gurson ductile material using X-FEM
+Jean-Philippe Crété, Patrice Longère, Jean-Marc Cadou and Johannes Wolf
+
+Numerical assessment of thick level set models for quasi-brittle materials
+Fabien Cazes, Alexis Salzman and Nicolas Moës
+
+A smoothed damage-contact formulation with improved convergence characteristics and numerical robustness
+Anthony Jefferson, Iulia C. Mihai and Paul Lyons
+
+22/07/2014  11:00 - 13:00
+Isogeometric Methods IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Yuri Bazilevs, David J. Benson, Rene De Borst, Thomas J.R. Hughes, Trond Kvamsdal, Alessandro Reali, Michael A. Scott and Clemens V. Verhoosel 	MS049D
+Room: Sala H 2
+Chair: Trond Kvamsdal
+
+Adaptive isogeometric failure analysis of trabecular bone structures (Keynote Lecture)
+Clemens V. Verhoosel, Gertjan van Zwieten and René de Borst
+
+Isogeometric Analysis for the evaluation of Carotid Artery Stent performance
+Ferdinando Auricchio, Michele Conti, Mauro Ferraro, Simone Morganti and Alessandro Reali
+
+An isogeometric model for rupture dynamics
+Julien Vignollet, Stefan May and René de Borst
+
+Cohesive zone modelling using T-splines
+Stefan May, Julien Vignollet and René de Borst
+
+Isogeometric Design Sensitivity Analysis of Curved Crack Problems
+Myung-Jin Choi, Seung-Wook Lee and Seonho Cho
+
+Isogeometric finite element analysis of single-phase Darcy flow in porous media
+Yared W. Bekele, Arne M. Kvarving, Steinar Nordal, Trond Kvamsdal and Gustav Grimstad
+
+22/07/2014  11:00 - 13:00
+Multiscale Computational Homogenization for Bridging Scales in the Mechanics and Physics of Complex Materials IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Julien Yvonnet, Kenjiro Terada, Peter Wriggers and Marc Geers 	MS012D
+Room: Sala H 3
+Chair: Gottfried Laschet
+CoChair: Luigi Gambarotta
+
+Potential based model order reduction: Theory and GPU implementation
+Felix Fritzen, Matthias Leuschner and Max Hodapp
+
+Wang cubes in numerical homogenization methods
+Martin Doškář, David Šedlbauer, Jaroslav Kruis and Jan Novák
+
+A dispersive computational homogenization scheme for modeling quasi-brittle materials under impact loading
+Amin Karamnejad and Lambertus J. Sluys
+
+A multi-level approach for micro-cracked viscoelastic masonry
+Thi Thu Nga Nguyen, Amna Rekik and Alain Gasser
+
+Numerical multiscale solution strategy for fracturing heterogeneous materials
+Lukasz Kaczmarczyk and Chris J. Pearce
+
+On the representative volume element size for quasi-isotropic macroscopic behaviour of a Fe-Mn-C steel microstructure simulated by the phase-filed method
+Gottfried M. Laschet and Markus Apel
+
+22/07/2014  11:00 - 13:00
+Computational Biomechanics IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by T.Christian Gasser, Miguel Cerrolaza, Ellen Kuhl, Michael Gee, Yomar Gonzalez, Simone Deparis and Thomas Franz 	MS007D
+Room: Sala J
+Chair: Ellen Kuhl
+CoChair: Alexander Zoellner
+
+A physically motivated constitutive model for cell-mediated compaction and collagen remodeling in engineered tissues
+Sandra Loerakker, Christine Obbink-Huizer and Frank P.T. Baaijens
+
+Isogeometric Kirchhoff-Love shell formulation for biological membranes
+Adrian Buganza Tepole, Hardik Kabaria and Ellen Kuhl
+
+A novel fluid-solid-growth framework of abdominal aortic aneurysm evolution
+Andrii Grytsan, Paul N. Watton, Thomas Eriksson and T. Christian Gasser
+
+Evaluation of aortic residual stresses: Experimental evidence and constitutive modeling
+Elena S. Di Martino, Giampaolo Martufi, Chiara Bellini, Simone Rivolo and T. Christian Gasser
+
+A 3D histomechanical growth and remodeling framework for arteries with application to Abdominal Aortic Aneurysms
+T. Christian Gasser
+
+22/07/2014  11:00 - 13:00
+Damage and Fracture in Thin Structures I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Timon Rabczuk and Pedro Areias 	MS076A
+Room: Business Centre I
+Chair: Timon Rabczuk
+
+Development and validation of dye-sensitized solar cell finite element model for sealing failure investigation
+Changwoon Han
+
+Finite strain fracture with injected anisotropic softening elements
+Pedro Areias and Timon Rabczuk
+
+Phase-field modeling of fracture in thin shells with maximum entropy approximants
+Daniel Millán, Fatemeh Amiri, Timon Rabczuk and Marino Arroyo
+
+Analysis on the plastic dynamic response on the reinforced concrete rectangular plate under explosive loading
+Jian He and Kongming Wu
+
+22/07/2014  11:00 - 13:00
+Computational Techniques and Simulation of Damage/Failure in Composite Materials I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Jose L. Curiel Sosa, Pedro M. Baiz and Ettore Baribieri 	MS061A
+Room: Business Centre II
+Chair: Jose Luis Curiel Sosa
+
+Damage and failure in composites
+Jose L. Curiel-Sosa, Behrooz Tafazzolimoghaddamadam, Joaquin Navarro-Zafra and Maria del Carmen Serna Moreno
+
+Quasi brittle matrix composite materials: A computational approach based on discontinuous-like FE and fracture mechanics debonding simulation
+Roberto Brighenti, Andrea Carpinteri and Daniela Scorza
+
+Experimental validation for a numerical model of transverse damage in composite materials
+Daniel J. Mortell, David A. Tanner and Conor T. McCarthy
+
+Design and Analysis of 3D Woven Composites at Failure
+David Ehrlich, Harun Bayraktar, Jon Goering, Michael McClain and Chris Redman
+
+Computational modeling of microscopic fracture process in compressive failure of quasi-isotropic laminate of composite materials
+Takeaki Nadabe and Nobuo Takeda
+
+Fatigue delamination monitoring in composite structures by guided wave method
+Adam Stawiarski
+
+22/07/2014  11:00 - 13:00
+Multibody System Dynamics and Modal Reduction IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Pascal Ziegler and Johannes Gerstmayr 	MS239D
+Room: Sala de prensa I
+Chair: Ulrike Zwiers
+CoChair: Pascal Bestle
+
+An enhanced inverse kinematic and dynamic model of a 6-SBU Stewart Platform
+Biswajit Halder, Rana Saha and Dipankar Sanyal
+
+Dynamics of an elastic web in roll-to-roll systems using Finite Element Method
+Yannick Martz and Dominique Knittel
+
+Modeling and validation of an elastoplastic terrain model for simulation of forestry machines
+John Nordberg, Martin Servin and Urban Bergsten
+
+Experimental and numerical analysis of the musical behavior of triangle instruments
+Pascal Bestle, Michael Hanss and Peter Eberhard
+
+Dynamics aspect of chatter suppression in milling
+Andrzej Weremczuk, Rafal Rusinek and Jerzy Warminski
+
+22/07/2014  11:00 - 13:00
+Multiphysics Modelling of Porous Media: Geomaterials, Biomaterials and Others IV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Younane N. Abousleiman, Stefan Diebels and Lorenzo Sanavia 	MS027D
+Room: Sala de prensa II
+Chair: Antonio Gens
+
+A micromechanical model for cement paste with effects of carbonation
+Wanqing Shen, Hamid Ghorbanbeigi and Jian-Fu Shao
+
+A multilevel model for ion and moisture transport in intact, micro-cracked and fracturing porous materials: Application to ASR in concrete
+Jithender J. Timothy, Minh N. Nguyen and Guenther Meschke
+
+Material viscoelasticity as result of microscale interactions between liquid crystalline interfaces and solid elastic matrix
+Mehran Shahidi, Bernhard Pichler and Christian Hellmich
+
+Particle-based modelling and computational homogenisation of granular media
+Sami Bidier and Wolfgang Ehlers
+
+Numerical multiscale modelling of hydrophobized sand using minimal kinematic boundary conditions procedure of homogenisation
+Marek Lefik, Marek Wojciechowski and Patrycja Baryla
+
+22/07/2014  11:00 - 13:00
+Domain Coupling and Domain Boundary Constraints I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Minisymposium organized by Martin Ruess, Stefan Kollmannsberger and Alessandro Reali 	MS185A
+Room: Sala de Reservas
+Chair: Stefan Kollmannsberger
+
+Enforcing domain coupling & boundary constraints in isogeometric methods
+Martin Ruess, Alessandro Reali and Stefan Kollmannsberger
+
+Coupling of laminated composite structures in the framework of isogeometric analysis
+Yujie Guo, Martin Ruess and Zafer Gürdal
+
+The weak substitution method - a new approach for the connection of NURBS surface patches in isogeometric analysis
+Wolfgang Dornisch, Gennaro Vitucci and Sven Klinkel
+
+Weak coupling of trimmed patches in isogeometric analysis and the Finite Cell Method
+Ali Özcan, Stefan Kollmannsberger, Joan Baiges, Alessandro Reali and Ernst Rank
+
+Task-based decomposition of a higher-order method on complex geometries
+Tobias Weinzierl and Roland Wittmann
+
+Local/global non-intrusive parallel coupling for large scale mechanical analysis
+Mickaël Duval, Jean-Charles Passieux, Michel Salaün and Stéphane Guinard
